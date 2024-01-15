@@ -13,8 +13,8 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After back to country , I decided to pursue my passion for{" "}
-        <span className="font-medium">programming</span> . I finished a coding
+        After coming back to country, I decided to pursue my passion for{" "}
+        <span className="font-medium">programming</span>. I finished a coding
         bootcamp and learned{" "}
         <span className="font-medium"> web development</span>.{" "}
         <span className="italic">My favorite part of programming</span> is the
@@ -30,9 +30,9 @@ export default function About() {
         developer.
       </p>
       <p>
-        <span className="italic">Privately, </span>, I spend a lot of my free
+        <span className="italic">Privately, </span> I spend a lot of my free
         time, apart from programming,{" "}
-        <span className="font-medium">training and baking various cakes,</span>.
+        <span className="font-medium">training and baking various cakes, </span>
         which may be a contradiction for many people.
       </p>
     </motion.section>
