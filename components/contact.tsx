@@ -26,7 +26,7 @@ export default function Contact() {
       }}
     >
       <SectionHeading>Contact Me</SectionHeading>
-      <p className="text-gray-700 -mt-6">
+      <p className="-mt-6 text-gray-700">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:wojtekmitan91@gmail.com">
           wojtekmitan91@gmail.com
@@ -34,13 +34,13 @@ export default function Contact() {
         or through this form
       </p>
       <form
-        className="mt-10 flex flex-col"
+        className="flex flex-col mt-10"
         action={async (formData) => {
           await sendEmail(formData);
         }}
       >
         <input
-          className="h-14 px-4 rounded-lg borderBlack "
+          className="px-4 rounded-lg h-14 borderBlack "
           name="senderEmail"
           type="email"
           required
@@ -48,18 +48,18 @@ export default function Contact() {
           placeholder="Your email"
         />
         <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4"
+          className="p-4 my-3 rounded-lg h-52 borderBlack"
           name="message"
           placeholder="Your message"
           required
-          maxLength={500}
+          maxLength={5000}
         />
         <button
           type="submit"
           className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105"
         >
           Submit
-          <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1 " />
+          <FaPaperPlane className="text-xs transition-all opacity-70 group-hover:translate-x-1 group-hover:-translate-y-1 " />
         </button>
       </form>
     </motion.section>
