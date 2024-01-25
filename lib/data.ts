@@ -39,15 +39,16 @@ export const experiencesData = [
     title: "Internet network installer",
     location: "Pionki, PL",
     description:
-      "I worked as a internet network installer for 1 year in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I worked as a internet network installer for 1 year - Repair of common technical faults.",
     icon: React.createElement(FaTools),
     date: "2013 - 2014",
   },
   {
     title: "Operating a pressure washing machine",
     location: "Edinburgh, GB",
-    description: "I worked as a pressure washing machine opeartor ",
-    // "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",,
+    description:
+      "I worked as a pressure washing machine operator - I improved my English and gained experience using heavy jet-wash machinery.",
+
     icon: React.createElement(IoMdWater),
     date: "2014 - 2021",
   },
@@ -55,7 +56,7 @@ export const experiencesData = [
     title: "FUTURE COLLARS bootcamp",
     location: "Pionki, PL",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I completed a very intensive bootcamp for which I received certificates and created my first bigger projects.",
     icon: React.createElement(LuGraduationCap),
     date: "2023",
   },
@@ -75,6 +76,8 @@ export const projectsData = [
       "MongoDb",
     ],
     imageUrl: rmtdevImg,
+    demo: "www.voytec.pl",
+    code: "https://github.com/sn0rii/marketplace",
   },
   {
     title: "Threads Clone",
@@ -89,6 +92,8 @@ export const projectsData = [
       "MongoDb",
     ],
     imageUrl: wordanalyticsImg,
+    demo: "https://voytec-threads.vercel.app/",
+    code: "https://github.com/sn0rii/threads",
   },
   {
     title: "Next JS Gallery",
@@ -96,6 +101,8 @@ export const projectsData = [
       "Final project for NextJs course, including all main features.",
     tags: ["React", "Next.js", "Typescript", "Tailwind"],
     imageUrl: corpcommentImg,
+    demo: "https://voytec-img-gallery.vercel.app/",
+    code: "https://github.com/sn0rii/img-gallery",
   },
 ] as const;
 
@@ -114,4 +121,5 @@ export const skillsData = [
   "Redux",
   "Express",
   "Framer Motion",
+  "Sense of Humour",
 ] as const;

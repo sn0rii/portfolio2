@@ -12,6 +12,8 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  demo,
+  code,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -37,6 +39,25 @@ export default function Project({
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70 ">
             {description}
           </p>
+          <div className="flex gap-2 py-2 items-center">
+            <a
+              href={demo}
+              // className="bg-white px-3 py-1 text-[0.7rem] uppercase tracking-wider text-black rounded-full dark:text-black/70 borderBlack hover:scale-100  "
+              className=" py-1 text-white transition bg-gray-900 rounded-full outline-none group px-7 focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105"
+              target="_blank"
+            >
+              demo
+            </a>
+            <a
+              href={code}
+              // className="bg-white px-3 py-1 text-[0.7rem] uppercase tracking-wider text-black rounded-full dark:text-black/70 borderBlack "
+              className="py-1 transition bg-white border rounded-full outline-none cursor-pointer group px-7 focus:scale-110 hover:scale-110 active:scale-105 border-black/10 dark:bg-white/10"
+              target="_blank"
+            >
+              code
+            </a>
+          </div>
+
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
             {tags.map((tag, index) => (
               <li
@@ -53,10 +74,10 @@ export default function Project({
           src={imageUrl}
           alt={title}
           quality={95}
-          className=" absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl 
+          className=" absolute hidden sm:block top-8 -right-40 w-[28.25rem] h-[12rem] rounded-t-lg shadow-2xl 
         transition group-hover:scale-[1.04]
         group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 
-        
+         
         group-even:group-hover:-translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2
 
         group-even:right-[initial] group-even:-left-40 "
