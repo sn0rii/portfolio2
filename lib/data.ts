@@ -1,5 +1,5 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
+
 import { IoMdWater } from "react-icons/io";
 import { FaReact, FaTools } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
