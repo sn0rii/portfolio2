@@ -4,7 +4,7 @@ import { IoMdWater } from "react-icons/io";
 import { FaReact, FaTools } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/NextJsImgGallery.jpg";
-import rmtdevImg from "@/public/ProjektMarket.jpg";
+import rmtdevImg from "@/public/ProjektPortfolio.jpg";
 import wordanalyticsImg from "@/public/ProjektThreads.jpg";
 
 export const links = [
@@ -64,20 +64,12 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Market Project",
-    description: "Fullstack E-Commerce Marketplace for Digital Products.",
-    tags: [
-      "React",
-      "TypeScript",
-      "Next.js",
-      "Tailwind",
-      "Shadcn-ui",
-      "Payload",
-      "MongoDb",
-    ],
+    title: "Portfolio Project",
+    description: "My first portfolio project in React..",
+    tags: ["React", "TypeScript", "Tailwind", "Payload"],
     imageUrl: rmtdevImg,
-    demo: "www.voytec.pl",
-    code: "https://github.com/sn0rii/marketplace",
+    demo: "https://voytecportfolio.netlify.app/",
+    code: "https://github.com/sn0rii/Portfolio01",
   },
   {
     title: "Threads Clone",
