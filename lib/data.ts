@@ -65,7 +65,7 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "Portfolio Project",
-    description: "My first portfolio project in React..",
+    description: "My first portfolio project in React.",
     tags: ["React", "TypeScript", "Tailwind", "Payload"],
     imageUrl: rmtdevImg,
     demo: "https://voytecportfolio.netlify.app/",
